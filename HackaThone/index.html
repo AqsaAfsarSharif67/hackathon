@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.0/dist/sweetalert2.min.css">
+</head>
+<body>
+
+    <!--......................... Navbar with Logo, Search Bar, and Auth Buttons................. -->
+    <div id="navbar">
+        <div id="logo">
+            <img id="logo1" src="./img/Ellipse 1.png" alt="Logo 1">
+            <img  src="./img/Coranu.png" alt="Logo 2">
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search by category...">
+        </div>
+
+        <div class="auth-buttons">
+
+            <a href="profile.html"><button class="auth-button" id="signup-btn">Add post</button></a>
+            <a href="signin.html"><button class="auth-button" id="login-btn">Login</button></a>
+            <a href="signup.html"><button class="auth-button" id="signup-btn">Sign Up</button></a>
+        </div>
+    </div>
+
+    <!--............... Main content area.................... -->
+    <div id="main-content">
+        <h1>Thoughts Ideas And Story</h1>
+        <p>A space where creativity flows, ideas take shape, and stories come to life. Dive in, explore, and connect with insights that inspire and resonate.</p>
+    </div>
+    <!-- .........HEALTH POST.............. -->
+    <center>
+    <div id="health-posts-container">
+        <div class="health-post">
+            <img class="post-img" src="./img/health.jpg" alt="">
+            <h2 class="post-tittle">Health Post</h2>
+            <p class="post-date">Published on january 1 , 2025</p>
+            <p class="post-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div></center>
+<!-- ............GENERAL.................. -->
+<center>
+    <div id="general-posts-container">
+        <div class="health-post">
+            <img class="post-img" src="./img/general.jpg" alt="">
+            <h2 class="post-tittle">General Post</h2>
+            <p class="post-date">Published on january 1 , 2025</p>
+            <p class="post-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</center>
+<!-- ..........EDUCTAION............. -->
+<center>
+<div id="education-posts-container">
+    <div class="health-post">
+        <img class="post-img" src="./img/education.jfif" alt="">
+        <h2 class="post-tittle">Education Post</h2>
+        <p class="post-date">Published on january 1 , 2025</p>
+        <p class="post-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+        <a href="#" class="read-more">Read More</a>
+    </div>
+</div></center>
+
+<!-- .............POLITICS -->
+<center>
+<div id="politics-posts-container">
+    <div class="health-post">
+        <img class="post-img" src="./img/politics.jpg" alt="">
+        <h2 class="post-tittle">Politics Post</h2>
+        <p class="post-date">Published on january 1 , 2025</p>
+        <p class="post-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, dignissimos.</p>
+        <a href="#" class="read-more">Read More</a>
+    </div>
+</div></center>
+    <!-- .............FOOTER.............  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="Stay-up-to-date">Stay up to date<p>
+            <h1>Join Our NewsLetter</h1>
+            <form class="newsletter-form">
+             <input type="email" placeholder="Enter your Email" class="email-input" required>
+             <button type="submit" class="submit-button"> submit</button>
+             <p>*You can unsubscribe anytime</p>
+            </form>
+        </div>
+    </footer>
+
+
+
+    <script  src="firebase.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

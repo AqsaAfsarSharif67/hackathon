@@ -1,0 +1,308 @@
+/*.... General body styling ............*/
+body  {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* ............Navbar styling.................. */
+#navbar {
+    background-color: #4487ca;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; 
+}
+
+#navbar img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ..................Navbar buttons styling..................... */
+.auth-button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+/* ...............Hover effect for buttons................. */
+.auth-button:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+}
+
+/* ..................Search bar inside the navbar................... */
+#search-container {
+    position: relative;
+    flex-grow: 1; 
+    margin-left: 15px; 
+}
+
+#search-bar {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 2px solid #1abc9c;
+    outline: none;
+    width: 200px;
+    transition: width 0.4s ease;
+}
+
+#search-bar:focus {
+    width: 250px;
+    border: 2px solid #16a085;
+}
+
+/*................... Main content styling ......................*/
+#main-content {
+    padding: 20px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* ............Align h1 and p to left ..................*/
+#main-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main-content p {
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin-top: 0;
+}
+/* .........HEALTH.............. */
+.health-post{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post-img{
+    width: 200px;
+    margin: 10px 0;
+    color: #333;
+}
+.post-date{
+    /* text-align: center; */
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+.read-more{
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+.health-post:hover{
+    transform: translate(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+/* .......FOOTER.......... */
+
+.footer{ 
+  
+    background-color: #2C3E50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: auto;
+   
+}
+
+.footer-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    color: black;
+    font-size:2rem  ;
+   margin-bottom: 10px;
+}
+.Stay-up-to-date{
+    color: rgb(83, 111, 195);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.newsletter-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   flex-wrap: wrap;
+}
+.email-input{
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.submit-button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: darkblue;
+}
+p{
+    padding: 10px 20px;
+}
+
+
+/*................ Mobile responsiveness.................. */
+@media (max-width: 768px) {
+    /* ...................Navbar adjustments for mobile....................... */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    #navbar img {
+        height: 25px; 
+    }
+
+    .auth-button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+        margin: 5px 0; 
+    }
+
+    #search-container {
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    #search-bar {
+        width: 100%; 
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Main content adjustments for mobile */
+    #main-content {
+        padding: 15px;
+        width: 95%;
+    }
+
+    #main-content h1 {
+        font-size: 28px;
+    }
+
+    #main-content p {
+        font-size: 14px; 
+    }
+}
+
+/* Tablet adjustments for screens between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+    #navbar {
+        padding: 15px 25px; 
+    }
+
+    #navbar img {
+        height: 28px; 
+    }
+
+    .auth-button {
+        padding: 10px 22px; 
+    }
+
+    #main-content h1 {
+        font-size: 32px; 
+    }
+
+    #main-content p {
+        font-size: 15px; 
+    }
+}
+
+/* ...........FOOTER RESPOUNSIVE............... */
+@media (max-width: 768px){
+    .footer{
+        padding: 30px 15px; 
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    .Stay-up-to-date{
+        font-size: 1rem;
+    }
+    .newsletter-form{
+        flex-direction: column;
+    }
+    .email-input{
+        width: 100%;
+        margin-right: 0;
+    }
+    .submit-button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:480px){
+    .footer{
+        padding: 20px 10px;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    .Stay-up-to-date{
+        font-size: 0.9rem;
+    }
+    .newsletter-form{
+        margin-top: 15px;
+    }
+    .email-input,
+    .submit-button{
+        font-size: 0.9rem;
+    }
+}
